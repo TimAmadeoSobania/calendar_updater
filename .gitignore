@@ -171,5 +171,5 @@ cython_debug/
 .pypirc
 
 # credentials, token and endpoints files
-.json
-.pickle
+*.json
+*.pickle
