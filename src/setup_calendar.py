@@ -11,7 +11,7 @@ from google.auth.transport.requests import Request
 # You can change the scope of the application, make sure to delete token.pickle file first
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
-CREDENTIALS_FILE = 'credentials.json'     # Give path to your credentials.json file
+CREDENTIALS_FILE = 'config/credentials.json'     # Give path to your credentials.json file
 
 
 def get_calendar_service():

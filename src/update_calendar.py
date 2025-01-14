@@ -8,10 +8,10 @@ from ics import Calendar
 import googleapiclient
 import json
 
-import setup_calendar
+import setup_calendar as setup_calendar
 
 
-with open('endpoints.json', 'rb') as json_data:
+with open('config/endpoints.json', 'rb') as json_data:
     endpoints = json.load(json_data)
     json_data.close()
 
