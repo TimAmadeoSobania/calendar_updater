@@ -174,3 +174,5 @@ cython_debug/
 *.json
 *.pickle
 #test
+error.txt
+venv/

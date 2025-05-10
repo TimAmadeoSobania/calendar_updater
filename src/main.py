@@ -2,7 +2,7 @@ from datetime import datetime
 import time
 
 running = True
-current_hour = datetime.now().hour
+current_hour = datetime.now().hour -1
 
 while running:
     try:
@@ -21,6 +21,6 @@ while running:
         running = False
     except Exception as e:
         with open('error.txt', 'a') as file:
-            file.write(datetime.now() + ' | error: ' + str(e))
+            file.write(f"{datetime.now()} | error: {str(e)}")
         print('An unexpected error occurred:', str(e))
         running = False
